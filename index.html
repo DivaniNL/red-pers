@@ -1,1 +1,135 @@
 <!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Pers</title>
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <ul>
+                <li><a href="">Colofon</a></li>
+                <li><a href="">Over</a></li>
+                <li><a href="">Meedoen</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile -->
+        <nav class="navbar mobile-shown">
+            <a href="#home" class="logo">
+              <img src="./assets/RedPers_Logo.webp" alt="Logo">
+            </a>
+            <button class="hamburger" aria-label="Mobile-menu" aria-expanded="false">
+                <svg id="menu-closed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="35" width="30"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                <svg id="menu-opened" xmlns="http://www.w3.org/2000/svg" height="35" width="30" viewBox="0 0 384 512"><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+            </button>
+            <ul class="nav-links category-menu mobile-menu">
+              <li><a href="./index.html">Voorpagina</a></li>
+              <li><a href="./category/rubriek/binnenland/">Binnenland</a></li>
+              <li><a href="./category/rubriek/buitenland/">Buitenland</a></li>
+              <li><a href="./category/rubriek/columns/">Columns</a></li>
+              <li><a href="./category/rubriek/economie/">Economie</a></li>
+              <li><a href="./category/rubriek/kunst-media/">Kunst & Media</a></li>
+              <li><a href="./category/rubriek/podcasts/">Podcasts</a></li>
+              <li><a href="./category/rubriek/politiek/">Politiek</a></li>
+              <li><a href="./category/rubriek/wetenschap/">Wetenschap</a></li>
+              <li><a href="#nieuwsbrief">Nieuwsbrief</a></li>
+              <li><a href="#doneren">Doneren</a></li>
+              <button class="search-icon" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" viewBox="0 0 512 512" height="25"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6 .1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+              </button>
+            </ul>
+        </nav>
+        <!--  -->
+
+        <!-- Desktop -->
+        <section class="mobile-hidden">
+            <div class="middle_header">
+                <p><span class="bold">Vrijdag 13 september</span>Podium voor de journalisten</p>
+                <a href="#home" class="logo">
+                    <img src="./assets/RedPers_Logo.webp" alt="Logo">
+                </a>
+                <ul class="nav-links small-float-menu">
+                    <li><a href="#nieuwsbrief">Nieuwsbrief</a></li>
+                    <li><a href="#doneren">Doneren</a></li>
+                    <button class="search-icon" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" viewBox="0 0 512 512" height="25"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6 .1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                    </button>
+                </ul>
+
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links category-menu">
+                  <li><a href="./index.html">Voorpagina</a></li>
+                  <li><a href="./category/rubriek/binnenland/">Binnenland</a></li>
+                  <li><a href="./category/rubriek/buitenland/">Buitenland</a></li>
+                  <li><a href="./category/rubriek/columns/">Columns</a></li>
+                  <li><a href="./category/rubriek/economie/">Economie</a></li>
+                  <li><a href="./category/rubriek/kunst-media/">Kunst & Media</a></li>
+                  <li><a href="./category/rubriek/podcasts/">Podcasts</a></li>
+                  <li><a href="./category/rubriek/politiek/">Politiek</a></li>
+                  <li><a href="./category/rubriek/wetenschap/">Wetenschap</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!--  -->
+    </header>
+
+    <main>
+        <section>
+            <!-- EERSTE SECTION VRAGEN MOBILE FIRST -->
+        </section>
+        <section>
+            <button class="playbtn">
+                <svg id="audio_play" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                <svg id="audio_stop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="17" height="17"><path d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                <span class="text_status">Artikel beluisteren</span>
+            </button>
+            <button class="bookmark">
+
+            </button>
+            <button class="share">
+
+            </button>
+            <button class="textsize">
+
+            </button>
+            <article>
+                <p>Als je ooit in Berlijn bent geweest heb je het vast wel eens gezien: glazen flessen met een geel-blauw etiket, gevuld met een amberkleurig, koolzuurhoudend drankje. Deze energydrink, Club-Mate, werd in de jaren '90 op de markt gebracht. Sindsdien is het onlosmakelijk verbonden met de Duitse hoofdstad, waar mensen het drinken aan biertafels voor Spätis (avondwinkels die op elke straathoek te vinden zijn), in parken en clubs. Met dank aan ravers en hackers, voor wie dag en nacht onopgemerkt in elkaar overvloeien, is Club-Mate verworden tot een waar cultureel fenomeen. Inmiddels is het drankje ook in onze hoofdstad bezig met een opmars: het wordt verkocht op de universiteit, in filmhuizen, clubs en verschillende supermarkten. En niet alleen Club-Mate, maar ook jongere maté-merken staan te popelen om de Nederlandse markt te veroveren. Red Pers sprak met twee van deze merken, Mojo Maté en El Tony Mate, over maté, hun drijfveren en de toekomst.</p>
+                <span class="bold">Een way of life</span>
+                <p>Lars van Kranenburg (26), medeoprichter van Mojo Maté, is een gepassioneerd verteller van het verhaal achter zijn product. Tijdens een tocht op een gletsjer in Patagonië, Chili, kwam hij voor het eerst in aanraking met maté. Zijn gids pakte een vreemd uitziende beker (een 'calabaza', gemaakt van een uitgeholde pompoen, zo ontdekte hij later) uit zijn tas en zette daar thee in van gedroogde bladeren. De bladeren waren afkomstig van de matéplant, waarvan de werking eeuwen geleden werd ontdekt door inheemse stammen: het drinken van thee van de bladeren geeft energie en zorgt ervoor dat je gefocust blijft.</p>
+                <p>De calabaza werd rondgedeeld, uit een speciaal filterrietje dronken ze samen van de thee. Het drinken van maté is een sociaal ritueel in veel Zuid-Amerikaanse landen. Tijdens de COVID-19 pandemie was een van de belangrijkste regels in Argentinië zelfs dat je geen maté mocht delen. “Het is daar echt een way of life, ze worden wakker met maté en drinken het de hele dag door,” aldus Lars.</p>
+                <p>Samen met zijn reisgenoot begon hij na thuiskomst een webshop waarop ze gedroogde maté-bladeren, calabaza's en filterrietjes verkochten en het verhaal achter de inheemse maté-traditie deelden. Al snel bleek echter dat het Nederlandse publiek zich moeilijk kon bekeren tot warme maté. Sommige mensen gingen de maté koud drinken, met ijsklontjes, citroensap en munt, vertelt Lars. Dat is ook heel populair in Paraguay en op de stranden van Rio de Janeiro, waar verkopers tussen de handdoekjes doorlopen en 'iced maté' verkopen. Zo ontstond het idee om een frisdrank produceren: “We wilden het gevoel van delen en de goede energie combineren in een ready-to-drink variant.” Het resultaat is “een zo natuurlijk mogelijk product, zo dicht mogelijk bij de smaak en de beleving van maté. We zetten het neer als een nieuw cafeïne alternatief. Net als koffie, maar dan op een frisse manier.”</p>
+                <span class="bold">Met z'n allen</span>
+                <p>Inmiddels is Mojo Maté te koop in alle Nederlandse filialen van Albert Heijn. De kleurrijke blikjes, geïnspireerd door het creatieve Vila Madalena in São Paolo, belichamen de waarden achter het jonge bedrijf. Naast creativiteit en duurzaamheid staat vooral inclusiviteit hoog op de agenda. “Maté drinken is in de traditie iets dat iedereen doet. Je kunt ook met wildvreemde mensen maté drinken, het is een middel om mensen samen te brengen,” licht Lars toe. Veel mensen delen de waarden die Mojo Maté uitdraagt, en daarmee onderscheidt het zich van andere energydrinks. Met name mensen in creatieve sectoren slaan aan op het drankje: “Die zijn geneigd om het net even anders te doen, om iets anders te drinken.”</p>
+                <p>Het uit Zwitserland overgewaaide El Tony Mate richt zich eveneens op creatievelingen. “Als je mensen uit de creatieve industrie aan boord hebt, dan volgt de rest vanzelf,” vertelt een medewerker die verantwoordelijk is voor de groei van het merk in Nederland. Ondersteund door een flinke dosis enthousiasme laat hij anderen graag kennis maken met zijn maté. Volgens hem zit de kracht van El Tony Mate in de combinatie van een overtuigend verhaal en een goed product. Dit sluit goed aan op een grote groep jonge mensen die steeds bewustere keuzes maakt op het gebied van onder andere duurzaamheid en gezondheid.</p>
+                <p>Hij ziet de opkomst van maté-frisdranken als een welkome beweging tegen ongezonde energydrinks. “Van een koffie of twee kun je best wel trillerig worden en ook weer een crash krijgen, bij energydrankjes vol suiker al helemaal. Daardoor gaan mensen alleen maar meer drinken en zich ook weer extra moe voelen.” Maté zorgt juist voor een geleidelijke energie boost en een scherpere focus. Recent onderzoek naar maté in het wetenschappelijke tijdschrift Nutrients laat zien dat dit het gevolg is van het stofje theobromine, dat een ontspannende werking heeft. Cafeïne zorgt voor een vernauwing van de bloedvaten en een verhoging van de bloeddruk, terwijl theobromine de bloedvaten juist ontspant. Koffie en energydrinks bevatten hoofdzakelijk cafeïne, terwijl maté ook theobromine bevat. Overigens geldt voor maté net als voor koffie en energydrinks dat een te grote hoeveelheid negatieve uitwerkingen kan hebben. “Drink maté dus met mate,” grapt de medewerker van El Tony Mate hierover.</p>
+                <span class="bold">Nieuwe energie</span>
+                <p>El Tony Mate richt zich onder andere op het nachtleven. Sommige feestgangers drinken El Tony Mate met een scheut vodka er in (de zogenaamde 'Turbo Tony'), maar maté biedt juist ook een goed alternatief op alcohol. Eén van hun ambities? “Mensen kennis laten maken met de functionaliteit van maté in de avond en nacht.” Dat mensen alcohol verruilen voor een gezonde energydrink sluit volgens Lars aan op een bredere trend in functional drinks: lekkere, verantwoorde drankjes met een positief effect op je lichaam. Waar bijvoorbeeld kombucha goed is voor je darmflora, geeft maté een energie boost. Daarnaast wordt in tal van wetenschappelijke artikelen gerefereerd aan andere gezondheidsvoordelen van maté, bijvoorbeeld voor het cardiovasculaire systeem en centrale zenuwstelsel. Over effectgroottes lijkt overigens geen consensus te bestaan.</p>
+                <aside class="quote">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400" width="20" height="25">
+                        <path d="M0 100C0 33.7 53.7 -20 120 -20l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/>
+                    </svg>
+                    <h2>Maté drinken is in de traditie iets dat iedereen doet</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400" width="20" height="25">
+                        <path d="M0 100C0 33.7 53.7 -20 120 -20l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/>
+                    </svg>
+                </aside>
+            </article>
+        </section>
+
+
+
+        <div id="search-popup">
+            <form action="/search" method="GET">
+              <input type="text" name="q" placeholder="Search...">
+              <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" viewBox="0 0 512 512" height="25"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6 .1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+              </button>
+            </form>
+          </div>
+    </main>
+</body>
+</html>
