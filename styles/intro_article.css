@@ -1,0 +1,55 @@
+section#intro_article{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    overflow-x: hidden;
+    .taxonomy{
+        line-height: 2.2em;
+        font-weight: bold;
+        letter-spacing: 8%;
+        color: var(--red);
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+    figure{
+        margin-top: 4em;
+        >img{
+            width: 100%;
+        }
+        >figcaption{
+            line-height: 1.4em;
+            font-size: 10px;
+            letter-spacing: 1px;            
+            text-transform: uppercase;
+            padding-top: 12px;
+            span{
+                display: none;
+            }
+        }
+    }
+    >.shape_green{
+        position: absolute;
+        top: -1px;
+        width: calc(100% + 2px);
+        left: -1px;
+        height: 100%;
+        z-index: -2;
+    }
+    .excerpt{
+        font-weight: 300;
+        margin: 1em 0;
+        font-size: 15px;
+        line-height: 1.44em;
+    }
+    cite{
+        letter-spacing: 1px;
+        font-style: normal;
+    }
+    .readingtime{
+        color: var(--grey-text);
+        letter-spacing: 1px;
+        margin-top: 6px;
+    }
+}
