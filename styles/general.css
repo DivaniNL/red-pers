@@ -57,6 +57,7 @@ a{
     --black-opacity: #000000B5;
     --light-green: #F4FBE9;
     /* --e-global-color-aace5e4: #EBEBEB; */
+    font-size: 12px;
 }
 /* Remove base button styling because it blows */
 button, input[type="submit"], input[type="reset"] {

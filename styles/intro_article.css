@@ -1,34 +1,74 @@
 section#intro_article{
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding: 30px 0 40px 0;
     text-align: center;
     position: relative;
     font-size: 12px;
     overflow-x: hidden;
-    .taxonomy{
-        line-height: 2.2em;
-        font-weight: bold;
-        letter-spacing: 8%;
-        color: var(--red);
-        text-transform: uppercase;
-        margin-bottom: 16px;
-    }
-    figure{
-        margin-top: 4em;
-        >img{
-            width: 100%;
-        }
-        >figcaption{
-            line-height: 1.4em;
-            font-size: 10px;
-            letter-spacing: 1px;            
-            text-transform: uppercase;
-            padding-top: 12px;
-            span{
-                display: none;
+    display: grid;
+    grid-template-columns: minmax(1.33rem, 1fr) minmax(0, 1520px) minmax(1.33em, 1fr);
+    .grid_receiver{
+        grid-column: 2/2;
+        article{
+            .excerpt{
+                font-weight: 300;
+                margin: 1em 0;
+                font-size: 15px;
+                line-height: 1.44em;
+            }
+            cite{
+                letter-spacing: 1px;
+                font-style: normal;
+            }
+            .readingtime{
+                color: var(--grey-text);
+                letter-spacing: 1px;
+                margin-top: 6px;
+            }
+        
+            .taxonomy{
+                line-height: 2.2em;
+                font-weight: bold;
+                letter-spacing: 8%;
+                color: var(--red);
+                text-transform: uppercase;
+                margin-bottom: 16px;
             }
         }
+        figure{
+            margin-top: 4em;
+            @media (min-width: 860px){
+                margin-top: 0;
+                display: grid;
+            }
+            >img{
+                width: 100%;
+            }
+            >figcaption{
+                line-height: 1.4em;
+                font-size: 10px;
+                letter-spacing: 1px;            
+                text-transform: uppercase;
+                padding-top: 12px;
+                span{
+                    display: none;
+                    @media (min-width: 860px){
+                        display: block;
+                        margin: 0 0.5em 0 0;
+                    }
+                }
+                @media (min-width: 860px){
+                    grid-row: 1/1;
+                    display: flex;
+                    .meta{
+                        display: flex;
+                        gap: 0.5em;
+                    }
+                }
+            }
+        } 
     }
+
+
     >.shape_green{
         position: absolute;
         top: -1px;
@@ -36,20 +76,61 @@ section#intro_article{
         left: -1px;
         height: 100%;
         z-index: -2;
+        .filter-effect {
+            filter: url(#filter0_d_42_1068);
+        }
     }
-    .excerpt{
-        font-weight: 300;
-        margin: 1em 0;
-        font-size: 15px;
-        line-height: 1.44em;
+    @media (min-width: 860px){
+        padding: 10em 0 5em;
+        .grid_receiver{
+            text-align: left;
+            display: flex;
+            align-items: center;
+            article{
+                width: calc(658/1520 * 100%);
+                padding-right: 4em;
+                .taxonomy{
+                    letter-spacing: 0.08em;
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                }
+                .excerpt{
+                    font-size: 21px;
+                }
+                cite{
+                    float: left;
+                }
+                .readingtime{
+                    margin-top: 0;
+                    float: right;
+                }
+
+            }
+            figure{
+                width: calc(862/1520 * 100%);
+                img{
+                    object-fit: cover;
+                    max-height: 500px;
+                }
+            }
+        }
+        .shape_green {
+            .filter-effect {
+                filter: none;
+            }
+            path{
+                stroke: transparent;
+            }
+        }
+       
     }
-    cite{
-        letter-spacing: 1px;
-        font-style: normal;
-    }
-    .readingtime{
-        color: var(--grey-text);
-        letter-spacing: 1px;
-        margin-top: 6px;
+    @media (min-width: 1200px){ 
+        .grid_receiver{
+            article{
+                h1{
+                font-size: 4em;
+                }
+            }
+        }        
     }
 }
