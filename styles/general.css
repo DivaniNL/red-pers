@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
 /*  Added Tiempos */
 @font-face {
     font-family: 'Tiempos Text';
@@ -60,7 +61,9 @@ a{
     font-size: 12px;
 }
 /* Remove base button styling because it blows */
-button, input[type="submit"], input[type="reset"] {
+button, 
+input[type="submit"], 
+input[type="reset"] {
 	background: none;
 	color: inherit;
 	border: none;
@@ -69,17 +72,26 @@ button, input[type="submit"], input[type="reset"] {
 	cursor: pointer;
 	outline: inherit;
 }
-main > section, main > article{
+
+main > section, 
+main > article{
     padding: 0 16px;
 }
+
 aside{
     padding: 27px;
 }
-h1, .h1, h2, .h2{
+
+h1, 
+.h1, 
+h2, 
+.h2{
     font-family: 'Tiempos Headline', sans-serif;   
     letter-spacing: -1px;
 }
-h1, .h1{
+
+h1, 
+.h1{
     font-size: 32px;
     line-height: 1.2em;
     letter-spacing: -1px;
