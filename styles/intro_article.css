@@ -1,4 +1,4 @@
-section#intro_article{
+div#intro_article{
     padding: 30px 0 40px 0;
     text-align: center;
     position: relative;
@@ -15,7 +15,7 @@ section#intro_article{
             align-items: center;
         }
 
-        article{
+        aside{
             .excerpt{
                 font-weight: 300;
                 margin: 1em 0;
@@ -112,7 +112,7 @@ section#intro_article{
                     }
                 }
             }
-            
+
             @media (min-width: 860px){
                 width: calc(862/1520 * 100%);
             }

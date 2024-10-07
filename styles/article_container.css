@@ -1,4 +1,4 @@
-section#article_container{
+#article_container{
     display: grid;
     grid-template-columns: minmax(1.33rem, 1fr) minmax(0, 650px) minmax(1.33em, 1fr);
     .grid_receiver{
@@ -50,7 +50,7 @@ section#article_container{
             /*  */
         }
 
-        article{
+        div{
             p, a{
                 font-family: 'Tiempos Text', sans-serif;
                 font-size: 16px;

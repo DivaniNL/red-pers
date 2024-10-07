@@ -73,8 +73,7 @@ input[type="reset"] {
 	outline: inherit;
 }
 
-main > section, 
-main > article{
+main > .grid_receiver{
     padding: 0 16px;
 }
 
