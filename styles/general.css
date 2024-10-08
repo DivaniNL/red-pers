@@ -27,10 +27,10 @@
     font-weight: bold;
     font-style: normal;
 }
-
 /* NO LINE */
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 /*  VARS! */
 :root{
@@ -61,6 +61,9 @@ a{
     font-size: 12px;
 }
 /* Remove base button styling because it blows */
+.hidden{
+    display: none !important;
+}
 button, 
 input[type="submit"], 
 input[type="reset"] {
@@ -99,4 +102,19 @@ h1,
 /* default search popup */
 #search-popup{
     display: none;
+}
+
+
+/* POPUP BODY */
+body.has-popup{
+    &:before{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #FFFFFFE6;
+        z-index: 10;
+        content: '';
+        top: 0;
+        left: 0;
+    }
 }
