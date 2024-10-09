@@ -85,6 +85,7 @@ document.querySelector('.utility_btn.textsize').addEventListener("click", functi
             const currentFontSize = parseInt(window.getComputedStyle(el).fontSize);
             const decreasedSize = (currentFontSize * 100) / 110; // Decrease font size
             el.style.fontSize = decreasedSize + 'px'; // Set new font size
+            el.style.fontSize = '';
         });
         Textsizeison = 0; // Update state variable
     }
