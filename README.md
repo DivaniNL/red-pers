@@ -13,14 +13,14 @@ We hebben voor Red Pers een artikel detailpagina nagebouwt.
 
 Voor Red Pers hebben we de artikel detail pagina nagemaakt op desktop en mobiel.
 Voor Red Pers is het belangrijk dat de schrijver centraal staat aangezien het een platform is voor opkomende redacteurs.
-Op deze pagina is in een intro-gedeelte te zien, in het kort, waar het artikel over ghaat. Daarna is het textgedeelte te zien. Hier staat alle artikel tekst te zien. Daarna is er een sectie om een donatie te geven aan Red Pers. Als laatste zijn relevante artikelen te zien die afkomstig zijn van de zelfde auteur of van andere redacteurs.
+Op deze pagina is in een intro-gedeelte te zien, in het kort, waar het artikel over gaat. Daarna is het textgedeelte te zien. Hier staat alle artikel tekst te zien. Daarna is er een sectie om een donatie te geven aan Red Pers. Als laatste zijn relevante artikelen te zien die afkomstig zijn van de zelfde auteur of van andere redacteurs.
 In de header en footer is er een navigatiemenu om te navigeren naar andere links.
 
 De pagina is responsive en is Mobile first ontworpen en gemaakt.  
 [Bekijk de website](https://divaninl.github.io/red-pers/)  
 <img width="1425" alt="Schermafbeelding 2024-10-09 om 10 11 22" src="https://github.com/user-attachments/assets/7a06a098-91ea-45dc-b85e-5a5d2e8df3f5">
 <img width="389" alt="Schermafbeelding 2024-10-09 om 10 35 24" src="https://github.com/user-attachments/assets/60f4cd17-9bc6-4092-a6fe-3288f389cce3">  
-**P.S. De afbeeldingen zijn eits uitgezoomd om meer van de pagina te kunen laten zien per screenshot.**
+**P.S. De afbeeldingen zijn iets uitgezoomd om meer van de pagina te kunen laten zien per screenshot.**
 
 
 ## Kenmerken
@@ -37,6 +37,12 @@ Hieronder staat de basis structuur uitgelegd met de setting in de [HEAD](#HEAD) 
   ```html
      <link rel="stylesheet" href="./styles/styles.css">
   ```
+
+In de `<head>` word een JS file geladen. Dit wordt meer uitgelegd onder het kopje [JS](#JS)
+  ```html
+     <script src="./scripts/script.js" defer></script>
+  ```
+
 
   In de `<head>` wordt een extern font geladen: De Inter + De Google static API (is nodig bij het inladen van Google Fonts
   In de css wordt ook de Tiempos Headline en Tiempos Text fotns ingeladen. Deze staan in de bestanden in het mapje /fonts/.
@@ -162,6 +168,37 @@ Belangrijke breakpoint waarbij veel elementen nu naast elkaar komen te staan
 #### @media (min-width: 1200px)
 
 Minor breakpoint waarbij in de intro section de paddign en de h1 groter is.
+
+### JS
+
+In JavaScript heb ik een aantal dingen gedaan:
+1. De textsize aanpassen van de artikeltekst:
+```js
+document.querySelector('.utility_btn.textsize').addEventListener("click", function() {
+    if (Textsizeison === 0) {
+        // Increase font size by 10% for direct children of #main_content
+        document.querySelectorAll('#main_content > *').forEach(function(el) {
+            const currentFontSize = parseInt(window.getComputedStyle(el).fontSize);
+            const increasedSize = (currentFontSize * 110) / 100; // Increase font size
+            el.style.fontSize = increasedSize + 'px'; // Set new font size
+        });
+        Textsizeison = 1; // Update state variable
+    } else {
+        // Decrease font size back to original (by dividing by 1.10)
+        document.querySelectorAll('#main_content > *').forEach(function(el) {
+            const currentFontSize = parseInt(window.getComputedStyle(el).fontSize);
+            const decreasedSize = (currentFontSize * 100) / 110; // Decrease font size
+            el.style.fontSize = decreasedSize + 'px'; // Set new font size
+            el.style.fontSize = '';
+        });
+        Textsizeison = 0; // Update state variable
+    }
+});
+```
+2. Popups tonen op basis van scroll en klik op buttons:
+Als je door 50% van de website gescrollt hebt, verschijnt de newsletter popup. De newsletter popup en de zoeken popup kunnen ook beide geopend worden met de buttons die hiervoor bedoeld zijn.
+
+Ook kunnen de popups gesloten worden door naast de popup te klikken, op het kruisje te klikken of door op de ESC knop te toetsen.
 
 ## Licentie
 
