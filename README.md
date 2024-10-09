@@ -20,6 +20,8 @@ De pagina is responsive en is Mobile first ontworpen en gemaakt.
 [Bekijk de website](https://divaninl.github.io/red-pers/)  
 <img width="1425" alt="Schermafbeelding 2024-10-09 om 10 11 22" src="https://github.com/user-attachments/assets/7a06a098-91ea-45dc-b85e-5a5d2e8df3f5">
 <img width="389" alt="Schermafbeelding 2024-10-09 om 10 35 24" src="https://github.com/user-attachments/assets/60f4cd17-9bc6-4092-a6fe-3288f389cce3">  
+<img width="380" alt="Schermafbeelding 2024-10-09 om 12 45 36" src="https://github.com/user-attachments/assets/479e6cf0-bb5b-4cd8-84dc-410c57297436">
+
 **P.S. De afbeeldingen zijn iets uitgezoomd om meer van de pagina te kunen laten zien per screenshot.**
 
 
