@@ -142,6 +142,10 @@ div#intro_article{
     }
 
     @media (min-width: 860px){
+        padding: 2em 0 5em 0;
+    }
+
+    @media (min-width: 1200px){
         padding: 10em 0 5em;
     }
 }
