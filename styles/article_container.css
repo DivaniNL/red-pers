@@ -143,6 +143,7 @@
             }
 
             aside.donation_frame{
+                /* Hier is een grid layout gemaakt met 3 rijen van drie kolommen. In rij 1 is de tekst te vinden, in rij twee, per kolom een kleine button. In rij 3 een grote button die 4 kolommen lang is, net als de tekst. Dit heb ik gedaan met grid tempalte area's, zodat de volgorde makkelijk aangepast kan worden. */
                 border: 1px solid var(--brownred);
                 color: var(--red);
                 background-color: var(--lightest-red);
@@ -154,7 +155,7 @@
                 "b5 b5 b5 b5";
                 margin-bottom: 16px;
                 p{
-                    grid-area: t;
+                    grid-area: t; /* t is de bovenste rij, zie regel 153*/
                     font-size: 14px;
                     line-height: 1.6em;
                     margin-bottom: 19px;
@@ -180,7 +181,7 @@
                     }
                     
                 }
-
+                /* b1 t/m b4 is de tweede rij, zie regel 154*/
                 .b1{
                     grid-area: b1;
                 }
@@ -199,6 +200,7 @@
 
                 .b5{
                     grid-area: b5;
+                    /* b5 is de derde rij, zie regel 155*/
                 }
             }
             section.author{
