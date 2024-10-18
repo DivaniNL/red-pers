@@ -64,6 +64,12 @@ a{
     /* --e-global-color-aace5e4: #EBEBEB; */
     font-size: 12px;
 }
+@media (prefers-contrast: more){
+    :root{
+        --red: #E0311A;
+        --brownred: #8B504B;
+    }
+}
 /* Remove base button styling because it blows */
 .hidden{
     display: none !important;
